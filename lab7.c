@@ -16,7 +16,30 @@ int main()
 
     day = (d1 + k - 2) % 7 + 1; //расчёт дня недели k-го дня
 
-    printf("День недели: %d\n", day);
+    switch (day)
+    {
+    case 1:
+        printf("День недели: Понедельник");
+        break;
+    case 2:
+        printf("День недели: Вторник");
+        break;
+    case 3:
+        printf("День недели: Среда");
+        break;
+    case 4:
+        printf("День недели: Четверг");
+        break;
+    case 5:
+        printf("День недели: Пятница");
+        break;
+    case 6:
+        printf("День недели: Суббота");
+        break;
+    case 7:
+        printf("День недели: Воскресенье");
+        break;
+    }
 
     return 0;
 }
